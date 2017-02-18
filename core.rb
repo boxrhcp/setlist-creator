@@ -7,7 +7,7 @@ require 'uri'
 #read a resource from a REST url
 def main
 	puts 'try it'
-	apiKey = 'fe0a144d-090a-475e-904d-02b50cbd75be'
+	apiKey = 'APIKEY'
 	url = URI.parse("https://api.setlist.fm/rest/0.1/artist/65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab.json?key="+apiKey)
 
 	request = Net::HTTP::Get.new(url.request_uri)
